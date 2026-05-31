@@ -18,12 +18,11 @@ RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 2
 def preprocess_input_FDS(args, data, *, **):
     label_map = data["label"].float()
     edge_map = get_edges(data["instance"])
-    # (중략...)
+    # 중략
     input_semantics = input_semantics.squeeze(0)
     for idx, segmap in enumerate(input_semantics):
         if 1 in segmap:
             map_to_be_preserved.append(idx)
-    
     input_semantics = input_semantics[map_to_be_preserved].unsqueeze(0)
     input_semantics = th.cat((input_semantics, instance_edge_map), dim=1)
 
