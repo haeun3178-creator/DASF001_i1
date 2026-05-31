@@ -28,7 +28,7 @@ def preprocess_input_FDS(args, data, *, **):
     input_semantics = input_semantics[map_to_be_preserved].unsqueeze(0)
     # 텐서 합치는 아래 부분에서 차원 불일치 에러 터짐
     input_semantics = th.cat((input_semantics, instance_edge_map), dim=1)
-
+```
 
 Claude:
 코드를 분석해 보니 preprocess_input_FDS 함수 내에 있는 input_semantics.squeeze(0) 부분이 원인입니다. squeeze(0)은 배치 사이즈(Batch size)가 1일 때만 차원을 축소합니다.
