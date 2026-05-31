@@ -4,18 +4,17 @@
 
 ---
 **User:**
-지금 논문 저자가 올린 깃허브 오리지널 코드 가져와서 `image_train.py` 돌려보고 있는데 에러남 내 그래픽카드가 RTX 5060 Ti 인데 CUDA랑 PyTorch 버전 다 맞췄거든? 근데 로그 보니까 `RuntimeError: expected scalar type Half but found Float` 이런 식으로 메모리나 정밀도 관련된 에러가 나. 
+지금 논문 저자가 올린 깃허브 오리지널 코드 가져와서 image_train.py 돌려보고 있는데 에러남 내 그래픽카드가 RTX 5060 Ti 인데 CUDA랑 PyTorch 버전 다 맞췄거든? 근데 로그 보니까 RuntimeError: expected scalar type Half but found Float 이런 식으로 메모리나 정밀도 관련된 에러가 나. 
 
 **Claude:**
 RTX 5060 Ti(Ada Lovelace, sm_89/sm_120 아키텍처) 환경에서 발생하는 전형적인 Mixed Precision(FP16) 호환성 문제입니다. GESCO 모델 코드는 구버전 PyTorch 환경에서 작성되었는데, 현재 사용 중인 최신 그래픽카드와 PyTorch 빌드(sm_90 제한) 사이에서 fp16 연산 가속을 제대로 인식하지 못해 충돌이 발생한 것입니다.
 코드를 뜯어고치는 것보다 명령어 파라미터를 수정하는 것이 빠릅니다. 학습 실행 명령어에 `--use_fp16 False` 옵션을 추가해서 float32 기반으로 강제 실행해 보세요.
 
 **User:**
-학습은 됐는데 `image_sample.py` 에서 이미지 추출이 안 됨.
-`RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 2 but got size 1 for tensor number 2 in the list.`
+학습은 됐는데 image_sample.py 에서 이미지 추출이 안 됨.
+RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 2 but got size 1 for tensor number 2 in the list.
 라고 에러 뜨는데, 코드 보고 뭐가 문제인지 디버깅해줘.
 
-```python
 def preprocess_input_FDS(args, data, *, **):
     label_map = data["label"].float()
     edge_map = get_edges(data["instance"])
@@ -26,9 +25,8 @@ def preprocess_input_FDS(args, data, *, **):
             map_to_be_preserved.append(idx)
     
     input_semantics = input_semantics[map_to_be_preserved].unsqueeze(0)
-    # 텐서 합치는 아래 부분에서 차원 불일치 에러 터짐
     input_semantics = th.cat((input_semantics, instance_edge_map), dim=1)
-```
+
 
 Claude:
 코드를 분석해 보니 preprocess_input_FDS 함수 내에 있는 input_semantics.squeeze(0) 부분이 원인입니다. squeeze(0)은 배치 사이즈(Batch size)가 1일 때만 차원을 축소합니다.
