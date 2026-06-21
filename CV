@@ -1,0 +1,169 @@
+%------------------------
+% Latex CV Template for COS Northeastern University Faculty
+% Author: Zoe Kearney
+
+% Formatting: https://www.overleaf.com/latex/templates/coles-resume-template/qhpynjcvjpcj
+
+% Follows: Template Dossier Documents, Office of the Provost, Northeastern; July 1, 2025 version (https://provost.northeastern.edu/faculty-affairs/). 
+
+%Disclaimer: This template is intended to complement Northeastern University’s dossier guidelines for tenure and promotion cases, as well as discipline-specific CV standards.
+
+% License: LaTeX Project Public License 1.3c
+%------------------------
+
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{a4paper, margin=1in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{lipsum} % For filler text
+\usepackage{changepage} %For Indenting
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+\newenvironment{subs} %Indenting
+  {\adjustwidth{2em}{0pt}}
+  {\endadjustwidth}
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{empty}
+
+% Header
+\begin{center}
+    \textbf{\Large Haeun Kim }\\[3pt] % Name
+    \textbf{Curriculum Vitae}\\[1pt] % CV
+    Seoul, South Korea | \href{}{hajuli@skku.edu}  % Contact info
+\end{center}
+
+%------------------------
+% Education and Employment Section
+\section*{EDUCATION \& EMPLOYMENT HISTORY}
+    \noindent
+    \newline
+    \textbf{Bachelor of Systems Management Engineering (Expected 2029)} \\
+    Sungkyunkwan University\\ 
+    Relevant Coursework: Calculus I, II; General Physics I; General Physics Laboratory I; Basis and Practice in Programming; Scientific \& Technical Writing; Creative and Interdisciplinary Design \\
+    Current Coursework: Applied Statistics I: Theory and Practice; Operations Research I; Introduction to Management of Technology; Smart Factory Capstone Design I; Introduction to Data Analysis and AI, Discrete Mathematics  \\
+    GPA: 4.32/4.5 \\
+
+    
+    \noindent
+    \textbf{Team Leader, Scientific Writing Project} \\
+    Time Period: Nov 2025 – Dec 2025\\
+    Sungkyunkwan University \\ 
+    - Led a team project on research proposal development\\
+    - Managed project timeline and coordinated team meetings\\
+    - Developed a research proposal on microplastic adsorption using Spirulina–pectin complexes, including literature review and experimental design\\
+    
+    \noindent
+    \textbf{External Relations Director, Volunteer Club} \\
+    Time Period: Mar 2026 – Present \\
+    Sungkyunkwan University Rotaract Club\\ 
+    - Coordinate external partnerships for volunteer activities \\
+    - Participate in external meetings and organize collaborative events \\
+
+    
+    \noindent
+    \textbf{Public Relations Member, Volunteer Club} \\
+    Time Period: Sep 2025 – Feb 2026\\
+    Sungkyunkwan University Rotaract Club\\ 
+    - Designed social media promotional materials \\
+    - Operated on-site promotion booths for recruitment and events \\
+    
+    
+    \noindent
+    \textbf{Math Tutor (Part-time)} \\
+    Time Period: Dec 2024 – Present\\
+    Private Academy \\ 
+    - Provided one-on-one math tutoring and academic support \\
+    - Managed student progress and study plans\\
+    - Assisted with administrative tasks and classroom management \\
+   
+
+     \noindent
+    \textbf{Volunteer Math Mentor} \\
+    Time Period: Sep 2025 – Nov 2025; Mar 2026 – Apr 2026 \\
+    Suwon High School \\ 
+   - Conducted one-on-one mentoring sessions (2 hours per week)\\ 
+    - Supported students’ understanding of core math concepts \\ 
+    \\ 
+
+%------------------------
+% Publications Section
+\section*{PUBLICATIONS}
+    
+    \subsection*{Non-Reviewed Articles}
+        - “A Study on the Legitimacy of the Art-in-Architecture Policy” (Academic Writing Coursework)\\ 
+        - “Cultural Transformation of the ‘Shadow’ Archetype: A Comparative Study of Nibelungenlied and Janghwa Hongryeon” (Understanding the Culture of German Course)\\ 
+        - “On Existence within Worthlessness” (Introduction to Philosophy Coursework)\\
+        - “Understanding Through Proper Distance: \textit{Shoko’s Smile} by Choi Eun-young” (Introduction to Literature Coursework)\\
+
+%------------------------
+% Creative activity section
+\section*{CREATIVE ACTIVITY}
+    
+    \subsection*{Presentations}
+        - Presented multiple academic and project-based works in class settings\\
+        - Led team presentations in literature and interdisciplinary courses\\
+   
+    \subsection*{Projects}
+        Smart Patrol Robot Prototype Project \\
+        - Developed a conceptual prototype addressing public safety issues\\
+        - Produced a promotional video as part of a team project\\
+\\
+        Experimental Study on Alcohol Absorption \\
+        - Designed and conducted an experiment comparing alcohol absorption (fasted vs. fed state) \\
+        - Analyzed results and wrote a scientific report\\
+\\
+        Literature Analysis Project: To Kill a Mockingbird \\
+        - Conducted in-depth analysis of minor characters in the novel \\
+        - Presented findings through a team-based presentation \\
+\\   
+        Smart Farm Multimodal AI Model for Tomato Growth Diagnosis (Ongoing) \\
+        - Developing a multimodal AI\\
+\\       
+        S-Global Challenger \\
+        - Proposed a Korean integrated governance model for large-scale crowd management through a comparative analysis of the UK's Green Guide governance framework \\
+        - Extracurricular Program\\
+        \\
+%------------------------
+\section*{SKILLS}
+    Programming: Python (basic), C (basic) \\
+    Tools: Excel (basic), Tracker (video analysis) \\
+    Other: PowerPoint, Basic Data Analysis  \\
+
+
+   
+
+   
+
+%------------------------
+\section*{SCHOLARSHIPS \& HONORS}
+    - EBS Dream Scholarship (External), 3,000,000 KRW\\
+    - Academic Excellence Scholarship, Sungkyunkwan University\\
+    
+%------------------------
+% Service and Professional Development Section
+\section*{SERVICE \& PROFESSIONAL DEVELOPMENT}
+ 
+    \subsection*{Service to the Community and Public}
+       - Active member of university volunteer club\\
+       - Participated in mentoring and community service activities\\
+  
+
+% End document
+\end{document}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
