@@ -1,4 +1,3 @@
-Markdown
 # Haeun Kim
 
 **Curriculum Vitae**
