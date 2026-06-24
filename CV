@@ -55,7 +55,7 @@
     \textbf{Bachelor of Systems Management Engineering (Expected 2029)} \\
     Sungkyunkwan University\\ 
     Relevant Coursework: Calculus I, II; General Physics I; General Physics Laboratory I; Basis and Practice in Programming; Scientific \& Technical Writing; Creative and Interdisciplinary Design \\
-    Current Coursework: Applied Statistics I: Theory and Practice; Operations Research I; Introduction to Management of Technology; Smart Factory Capstone Design I; Introduction to Data Analysis and AI, Discrete Mathematics  \\
+    Current Coursework: Applied Statistics I: Theory and Practice; Operations Research I; Introduction to Management of Technology; Smart Factory Capstone Design I; Introduction to Data Analysis and AI; Discrete Mathematics  \\
     GPA: 4.32/4.5 \\
 
     
@@ -99,6 +99,7 @@
    - Conducted one-on-one mentoring sessions (2 hours per week)\\ 
     - Supported students’ understanding of core math concepts \\ 
     \\ 
+    
 
 %------------------------
 % Publications Section
@@ -109,6 +110,20 @@
         - “Cultural Transformation of the ‘Shadow’ Archetype: A Comparative Study of Nibelungenlied and Janghwa Hongryeon” (Understanding the Culture of German Course)\\ 
         - “On Existence within Worthlessness” (Introduction to Philosophy Coursework)\\
         - “Understanding Through Proper Distance: \textit{Shoko’s Smile} by Choi Eun-young” (Introduction to Literature Coursework)\\
+
+    \subsection*{Manuscripts in Preparation}
+        - TomatoDiag: Multimodal DINOv2 and TimesNet Based 3-Integrated Diagnosis System for Smart Tomato Farming (planned submission to ACCV)
+\\
+  
+%------------------------
+% RESEARCH OUTPUTS section
+\section*{RESEARCH OUTPUTS}
+
+\subsection*{Patent}
+- Image and Sensor Multimodal Fusion-Based Smart Farm Tomato Integrated Diagnosis System (Patent application)
+
+\subsection*{Software}
+- Tomato Fruit Maturity and Cultivation Environment Integrated Diagnosis Program (Registered software copyright) \\
 
 %------------------------
 % Creative activity section
@@ -131,17 +146,30 @@
         - Conducted in-depth analysis of minor characters in the novel \\
         - Presented findings through a team-based presentation \\
 \\   
-        Smart Farm Multimodal AI Model for Tomato Growth Diagnosis (Ongoing) \\
-        - Developing a multimodal AI\\
+       TomatoDiag: Multimodal Multi-task Integrated Diagnosis Framework for Smart Tomato Farming \\
+        - Developed a multimodal AI framework integrating tomato images with EC and pH sensor data \\
+        - Built a unified model for tomato growth stage classification (Breaker, Pink, Red), nutrient solution prediction, and sensor anomaly detection \\
+        - Contributed to model architecture design, training pipeline implementation, and technical report writing \\
 \\       
-        S-Global Challenger \\
+        S-Global Challenger (University Extracurricular Program) \\
         - Proposed a Korean integrated governance model for large-scale crowd management through a comparative analysis of the UK's Green Guide governance framework \\
-        - Extracurricular Program\\
         \\
+    
+
+        \subsection*{Selected Research Literature}
+
+Team Literature Review\\
+- Interpretable Deep Multimodal-Based Tomato Disease Diagnosis and Severity Estimation\\
+- A Systematic Review on Deep Learning Techniques for Maturity Classification of Tomato Fruit on Plants\\
+\\
+Individual Literature Review\\
+- Multi-modal Deep Learning Improves Grain Yield Prediction\\
+- Generative Semantic Communication: Diffusion Models Beyond Bit Recovery
+\\
 %------------------------
 \section*{SKILLS}
-    Programming: Python (basic), C (basic) \\
-    Tools: Excel (basic), Tracker (video analysis) \\
+    Programming: Python (Basic), C (Basic) \\
+    Tools: Excel (Basic), Tracker (video analysis) \\
     Other: PowerPoint, Basic Data Analysis  \\
 
 
